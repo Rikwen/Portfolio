@@ -2,12 +2,7 @@ import streamlit as st
 import requests
 
 
-try:
-    import importlib
-    streamlit_lottie = importlib.import_module("streamlit_lottie")
-    st_lottie = streamlit_lottie.st_lottie
-except ImportError:
-    st_lottie = None
+
 
 # Page config
 st.set_page_config(
@@ -72,18 +67,15 @@ if page == "🏠 Home":
 
     with col2:
         st.title("Hi, I'm **TSOJI VICTOR RIKWEN** 👋")
-        st.subheader("Software Engineer | AI & Fintech Enthusiast")
+        st.subheader("Software Engineer")
         st.write("""
         Solutions-driven Computer Scientist skilled in **Python, React, JavaScript, and SQL/NoSQL** —
         passionate about Big Data, AI research, and building tools that solve real business problems.
         Currently building an AI-powered financial chatbot and options trading simulator for the African stock market.
         """)
 
-        if st_lottie:
-            st_lottie(load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfj5l6p.json"),
-                      speed=1, height=200, key="coding")
-        else:
-            st.markdown("---")
+       
+           
 
         col_btn1, col_btn2 = st.columns(2)
         with col_btn1:
