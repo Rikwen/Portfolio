@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 
+
 try:
     import importlib
     streamlit_lottie = importlib.import_module("streamlit_lottie")
@@ -64,7 +65,7 @@ if page == "🏠 Home":
     with col1:
         try:
             from PIL import Image
-            profile = Image.open("assets/profile.jpg")
+            profile = Image.open("assets/Inter.jpg")
             st.image(profile, width=250, caption="TSOJI VICTOR RIKWEN")
         except:
             st.image("assets/inter.jpg", width=200, caption="TSOJI VICTOR RIKWEN")
@@ -183,6 +184,7 @@ elif page == "🛠️ Skills":
         st.progress(65, text="Hugging Face / OpenAI API")
         st.progress(70, text="Git & GitHub")
         st.progress(75, text="Docker")
+        st.progress(75, text="Postman")
         st.progress(65, text="Zoho / Google Workspace")
         st.progress(60, text="Draw.io / Lucidchart")
         st.progress(70, text="Trading View")
@@ -224,7 +226,7 @@ elif page == "💼 Projects":
         """)
         st.markdown('<span class="tag">AI</span> <span class="tag">Fintech</span> <span class="tag">OpenAI</span> <span class="tag">Data Engineering</span>', unsafe_allow_html=True)
         st.link_button("View on GitHub", "https://github.com/Tsoji78/RabovelBackend")
-        st.link_button("Download the APK", "https://github.com/Tsoji78/RabovelBackend")
+        st.link_button("Download the APK", "https://expo.dev/accounts/codewarriorstechs-organization/projects/rabovel-staking-platform-P6MFqD2RmgZz8VmOYWniM/builds/432410ed-a3e6-4801-bebe-22fa25ca4639")
 
     with tab3:
         st.subheader("ShapPay")
@@ -237,6 +239,7 @@ elif page == "💼 Projects":
         """)
         st.markdown('<span class="tag">Fintech</span> <span class="tag">Stock Trading</span> <span class="tag">Python</span> <span class="tag">APIs</span>', unsafe_allow_html=True)
         st.link_button("View on GitHub", "https://github.com/Shappay-LTD/the-backend.git")
+        st.link_button("View on Figma", "https://www.figma.com/design/SMeqcsRcTDDAYIrUaJhALL/ShapPay-User-app?t=cyBXcvpoLLcDro3V-0")
 
     with tab4:
         st.subheader("Lera Communications")
@@ -401,4 +404,3 @@ elif page == "📞 Contact":
 
 # Footer
 st.markdown("---")
-st.markdown("© 2026 **TSOJI VICTOR RIKWEN** | Built with [Streamlit](https://streamlit.io)")
